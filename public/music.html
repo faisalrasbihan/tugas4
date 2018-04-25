@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Boots!</title>
+    <meta charset="utf-8">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Song</th>
+          <th scope="col">Artist</th>
+          <th scope="col">Album</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class='clickable-row' data-href='/audio/1.mp3'>
+          <th scope="row">1</th>
+          <td>Back in Black</td>
+          <td>AC-DC</td>
+          <td>Back in Black</td>
+        </tr>
+        <tr class='clickable-row' data-href='/audio/2.mp3'>
+          <th scope="row">2</th>
+          <td>Sunday Morning</td>
+          <td>Maroon 5</td>
+          <td>Plain Jane</td>
+        </tr>
+        <tr class='clickable-row' data-href='/audio/3.mp3'>
+          <th scope="row">3</th>
+          <td>Psycho</td>
+          <td>Post Malone</td>
+          <td>@Single</td>
+        </tr>
+        <tr class='clickable-row' data-href='/audio/4.mp3'>
+          <th scope="row">4</th>
+          <td>Burning Man</td>
+          <td>Post Malone</td>
+          <td>@Single</td>
+        </tr>
+        <tr class='clickable-row' data-href='/audio/5.mp3'>
+          <th scope="row">5</th>
+          <td>Dance Dance</td>
+          <td>Fall Out Boy</td>
+          <td>From Under The Cork Tree</td>
+        </tr>
+      </tbody>
+    </table>
+    <audio id="audio" controls="controls">
+    <source id="audioSource" src=""></source>
+    </audio>
+    <!-- jQuery first then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/music.js"></script>
+
+</body>
+
+</html>
